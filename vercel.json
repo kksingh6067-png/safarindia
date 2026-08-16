@@ -1,17 +1,11 @@
 {
   "rewrites": [
-    {
-      "source": "/admin/login",
-      "destination": "/login.html"
-    },
-    {
-      "source": "/admin",
-      "destination": "/login.html"
-    },
-    {
-      "source": "/admin/dashboard",
-      "destination": "/admin-dashboard.html"
-    }
+    { "source": "/admin/login", "destination": "/login" },
+    { "source": "/admin/login/", "destination": "/login" },
+    { "source": "/admin", "destination": "/login" },
+    { "source": "/admin/", "destination": "/login" },
+    { "source": "/admin/dashboard", "destination": "/admin-dashboard" },
+    { "source": "/admin/dashboard/", "destination": "/admin-dashboard" }
   ],
   "cleanUrls": true,
   "trailingSlash": false
