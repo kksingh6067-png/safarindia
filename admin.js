@@ -265,8 +265,6 @@ if (logoutBtn) {
 
 
             window.location.replace("/admin/");
-            );
-
         }
     );
 
