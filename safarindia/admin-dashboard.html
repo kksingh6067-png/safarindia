@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SafarIndia Admin Dashboard</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            color: #111827;
+        }
+
+        .header {
+            background: #111827;
+            color: white;
+            padding: 18px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .logout-btn {
+            background: #dc2626;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1500px;
+            margin: 30px auto;
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 15px;
+        }
+
+        .top-section h2 {
+            margin: 0;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .refresh-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .search-box {
+            padding: 10px 12px;
+            width: 280px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .stat-card h3 {
+            margin: 0 0 10px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .stat-card p {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .table-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1300px;
+        }
+
+        th {
+            background: #111827;
+            color: white;
+            padding: 14px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        td {
+            padding: 13px;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 14px;
+            vertical-align: top;
+        }
+
+        tr:hover {
+            background: #f9fafb;
+        }
+
+        .status-select {
+            padding: 7px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            margin: 2px;
+            padding: 6px 9px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 12px;
+            color: white;
+        }
+
+        .call-btn {
+            background: #2563eb;
+        }
+
+        .whatsapp-btn {
+            background: #16a34a;
+        }
+
+        #statusMessage {
+            text-align: center;
+            padding: 20px;
+            color: #6b7280;
+        }
+
+        @media (max-width: 900px) {
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .top-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .actions {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <h1>SafarIndia Admin Dashboard</h1>
+
+    <button
+        class="logout-btn"
+        id="logoutBtn"
+    >
+        Logout
+    </button>
+
+</header>
+
+
+<main class="container">
+
+    <div class="top-section">
+
+        <h2>Customer Enquiries</h2>
+
+        <div class="actions">
+
+            <input
+                type="text"
+                id="searchInput"
+                class="search-box"
+                placeholder="Search name, phone, destination..."
+            >
+
+            <button
+                class="refresh-btn"
+                id="refreshBtn"
+            >
+                Refresh
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <section class="stats">
+
+        <div class="stat-card">
+            <h3>Total</h3>
+            <p id="totalEnquiries">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>New</h3>
+            <p id="newEnquiries">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Contacted</h3>
+            <p id="contactedEnquiries">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Confirmed</h3>
+            <p id="confirmedEnquiries">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Cancelled</h3>
+            <p id="cancelledEnquiries">0</p>
+        </div>
+
+    </section>
+
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Destination</th>
+                    <th>Travel Date</th>
+                    <th>Travellers</th>
+                    <th>Message</th>
+                    <th>Status</th>
+                    <th>Contact</th>
+                    <th>Submitted</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="enquiryTableBody"></tbody>
+
+        </table>
+
+        <div id="statusMessage">
+            Loading enquiries...
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="./dashboard.js?v=3"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/admin/login", "destination": "/login" },
+    { "source": "/admin/login/", "destination": "/login" },
+    { "source": "/admin", "destination": "/login" },
+    { "source": "/admin/", "destination": "/login" },
+    { "source": "/admin/dashboard", "destination": "/admin-dashboard" },
+    { "source": "/admin/dashboard/", "destination": "/admin-dashboard" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}

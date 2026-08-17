@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safarindia Private Limited | Luxury Holiday Packages & Customized Tours</title>
+    <meta name="description" content="Safarindia Private Limited - Your premium travel partner for luxury holiday packages, hotel bookings, private cabs, sightseeing, and tailored tours across India & worldwide.">
+
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         FLOATING ACTION BUTTONS
+    ========================================== -->
+    <div class="floating-contact">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/919990376067?text=Hello%20SafarIndia%2C%20I%20want%20to%20plan%20a%20luxury%20holiday."
+           class="floating-btn floating-whatsapp"
+           target="_blank"
+           rel="noopener"
+           aria-label="Chat on WhatsApp">
+            <span class="btn-icon">💬</span>
+            <span class="btn-label">WhatsApp</span>
+        </a>
+
+        <!-- Call -->
+        <a href="tel:+919990376067"
+           class="floating-btn floating-call"
+           aria-label="Call SafarIndia Concierge">
+            <span class="btn-icon">📞</span>
+            <span class="btn-label">Call Now</span>
+        </a>
+
+        <!-- Back to Top -->
+        <a href="#home" class="floating-btn back-to-top" id="backToTop" aria-label="Back to Top">
+            <span>↑</span>
+        </a>
+    </div>
+
+    <!-- =====================================================
+         LUXURY GLASS HEADER
+    ===================================================== -->
+    <header class="header" id="mainHeader">
+        <div class="container nav-container">
+
+            <!-- LOGO BRAND -->
+            <a href="#home" class="brand-logo" aria-label="SafarIndia Home">
+                <div class="logo-emblem">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="22" stroke="url(#goldGrad)" stroke-width="2.5" stroke-dasharray="6 3"/>
+                        <path d="M24 6L28 20L42 24L28 28L24 42L20 28L6 24L20 20L24 6Z" fill="url(#goldGrad)"/>
+                        <circle cx="24" cy="24" r="4" fill="#0B132B"/>
+                        <defs>
+                            <linearGradient id="goldGrad" x1="6" y1="6" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FCD34D"/>
+                                <stop offset="0.5" stop-color="#F59E0B"/>
+                                <stop offset="1" stop-color="#D97706"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">SAFARINDIA</span>
+                    <span class="brand-subtitle">PRIVATE LIMITED</span>
+                </div>
+            </a>
+
+            <!-- NAVIGATION LINKS -->
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#packages" class="nav-link">Destinations</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#why-us" class="nav-link">Why Us</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- QUICK CONTACT & CTA -->
+            <div class="header-actions">
+                <a class="header-phone" href="tel:+919990376067">
+                    <span class="phone-icon">📞</span>
+                    <div class="phone-meta">
+                        <small>24/7 Helpline</small>
+                        <strong>+91 9990376067</strong>
+                    </div>
+                </a>
+
+                <a class="btn btn-luxury-primary" href="#contact">
+                    <span>Plan Your Trip</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button class="mobile-menu-btn" id="mobileMenuToggle" type="button" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- =====================================================
+         HERO SECTION WITH DYNAMIC AUTO-CHANGING SLIDES
+    ===================================================== -->
+    <section id="home" class="hero-slider-section">
+
+        <!-- SLIDESHOW BACKGROUND LAYERS -->
+        <div class="hero-slides-wrapper" id="heroSlider">
+            <!-- Slide 1: Kashmir -->
+            <div class="hero-slide active" style="background-image: url('images/kashmir.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-badge">Kashmir • Paradise on Earth</div>
+            </div>
+
+            <!-- Slide 2: Kerala -->
+            <div class="hero-slide" style="background-image: url('images/kerala.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-badge">Kerala • God's Own Country</div>
+            </div>
+
+            <!-- Slide 3: Manali -->
+            <div class="hero-slide" style="background-image: url('images/manali.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-badge">Manali • Majestic Snowy Peaks</div>
+            </div>
+
+            <!-- Slide 4: Rajasthan -->
+            <div class="hero-slide" style="background-image: url('images/rajasthan.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-badge">Rajasthan • Royal Heritage & Palaces</div>
+            </div>
+
+            <!-- Slide 5: Goa -->
+            <div class="hero-slide" style="background-image: url('images/goa.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-badge">Goa • Golden Sunsets & Serene Beaches</div>
+            </div>
+        </div>
+
+        <!-- HERO CONTENT -->
+        <div class="container hero-content-container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+
+                <div class="hero-pill">
+                    <span class="pill-dot"></span>
+                    <span>INDIA'S PREFERRED LUXURY TRAVEL PARTNER</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Discover The World in <span class="highlight-text">Pure Luxury</span> & Elegance
+                </h1>
+
+                <p class="hero-description">
+                    Handcrafted holiday packages, 5-star stays, private sightseeing, and VIP concierge services designed exclusively for unforgettable experiences.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#packages" class="btn btn-luxury-primary btn-lg">
+                        <span>Explore Packages</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <a href="#contact" class="btn btn-luxury-glass btn-lg">
+                        <span>Customized Itinerary</span>
+                    </a>
+                </div>
+
+                <!-- TRUST METRICS -->
+                <div class="hero-trust-bar" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trust-item">
+                        <span class="trust-icon">⭐</span>
+                        <div class="trust-text">
+                            <strong>4.9 / 5.0 Rating</strong>
+                            <small>Over 12,000+ Satisfied Guests</small>
+                        </div>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <span class="trust-icon">🛡️</span>
+                        <div class="trust-text">
+                            <strong>100% Verified Stays</strong>
+                            <small>Handpicked Luxury Hotels</small>
+                        </div>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <span class="trust-icon">💬</span>
+                        <div class="trust-text">
+                            <strong>24/7 Dedicated Support</strong>
+                            <small>Instant Response Concierge</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SLIDER CONTROLS -->
+        <div class="slider-controls">
+            <button class="slider-arrow prev" id="heroPrevBtn" aria-label="Previous Slide">‹</button>
+            <div class="slider-indicators" id="heroDots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+                <span class="dot" data-slide="4"></span>
+            </div>
+            <button class="slider-arrow next" id="heroNextBtn" aria-label="Next Slide">›</button>
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         CORE LUXURY PILLARS / HIGHLIGHTS
+    ===================================================== -->
+    <section class="section features-section">
+        <div class="container">
+            <div class="features-grid">
+
+                <div class="luxury-feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon-box">
+                        <span>✈️</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Tailored Itineraries</h3>
+                        <p>Bespoke holiday plans customized precisely to your pace, preferences, and luxury standards.</p>
+                    </div>
+                </div>
+
+                <div class="luxury-feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon-box">
+                        <span>🏨</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Premium Hospitality</h3>
+                        <p>Hand-selected 4-star and 5-star resorts with verified reviews, great views, and complimentary breakfast.</p>
+                    </div>
+                </div>
+
+                <div class="luxury-feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon-box">
+                        <span>🚘</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Chauffeured Transfers</h3>
+                        <p>Sanitized, modern private vehicles with polite and experienced local drivers for seamless transit.</p>
+                    </div>
+                </div>
+
+                <div class="luxury-feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon-box">
+                        <span>💎</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Best Price Guarantee</h3>
+                        <p>Direct wholesale hotel rates & transparent pricing with zero hidden charges or last-minute surprises.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         ABOUT US SECTION
+    ===================================================== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+
+                <div class="about-image-wrapper" data-aos="fade-right">
+                    <div class="image-frame">
+                        <img src="images/about.jpg" alt="About SafarIndia Private Limited" class="main-about-img" loading="lazy">
+                        <div class="floating-badge">
+                            <span class="badge-num">10+</span>
+                            <span class="badge-text">Years of Curating Unforgettable Journeys</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content" data-aos="fade-left">
+                    <div class="section-tag">
+                        <span>ABOUT SAFARINDIA</span>
+                    </div>
+                    <h2 class="section-title">
+                        Crafting Timeless Memories with Complete Peace of Mind
+                    </h2>
+                    <p class="section-desc">
+                        At <strong>Safarindia Private Limited</strong>, we believe travel is more than just sightseeing—it is an inspiring, luxurious journey that enriches your life. Whether you are exploring the royal heritage of Rajasthan, the misty peaks of Kashmir, or serene Kerala backwaters, our dedicated travel specialists handle every minute detail.
+                    </p>
+
+                    <div class="about-perks">
+                        <div class="perk-item">
+                            <span class="perk-check">✓</span>
+                            <div>
+                                <strong>Personalized Travel Concierge</strong>
+                                <p>Dedicated relationship manager available 24/7 during your trip.</p>
+                            </div>
+                        </div>
+                        <div class="perk-item">
+                            <span class="perk-check">✓</span>
+                            <div>
+                                <strong>Flexible Booking & Easy Rescheduling</strong>
+                                <p>Hassle-free date change options for ultimate peace of mind.</p>
+                            </div>
+                        </div>
+                        <div class="perk-item">
+                            <span class="perk-check">✓</span>
+                            <div>
+                                <strong>Government Approved & Certified</strong>
+                                <p>Trusted by thousands of families, corporate clients, and honeymooners.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta-row">
+                        <a href="#contact" class="btn btn-luxury-primary">
+                            <span>Get Free Consultation</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="tel:+919990376067" class="phone-link-btn">
+                            <span>Call +91 9990376067</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         CURATED PACKAGES WITH 3D FLIP PHOTO CARDS
+    ===================================================== -->
+    <section id="packages" class="section packages-section">
+        <div class="container">
+
+            <div class="section-header-center" data-aos="fade-up">
+                <div class="section-tag">
+                    <span>HANDPICKED HOLIDAY PACKAGES</span>
+                </div>
+                <h2 class="section-title">Trending Luxury Destinations</h2>
+                <p class="section-subtitle">
+                    Hover over or tap any card to view itinerary highlights, included luxury amenities, and instant booking details.
+                </p>
+            </div>
+
+            <div class="packages-grid">
+
+                <!-- PACKAGE 1: KASHMIR -->
+                <div class="flip-card-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flip-card">
+                        <!-- FRONT SIDE -->
+                        <div class="flip-card-front" style="background-image: url('images/kashmir.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-badge">Bestseller</div>
+                            <div class="front-content">
+                                <div class="rating-stars">★★★★★ <span>(4.9)</span></div>
+                                <h3 class="destination-name">Kashmir Heaven on Earth</h3>
+                                <p class="destination-route">Srinagar • Gulmarg • Pahalgam • Sonmarg</p>
+                                <div class="price-duration-row">
+                                    <span class="duration">⏱ 5 Nights / 6 Days</span>
+                                    <span class="price">From ₹18,999/-</span>
+                                </div>
+                                <div class="flip-hint">⇄ Tap or Hover to View Inclusions</div>
+                            </div>
+                        </div>
+
+                        <!-- BACK SIDE -->
+                        <div class="flip-card-back">
+                            <div class="back-inner">
+                                <h4>Kashmir Tour Inclusions</h4>
+                                <ul class="inclusion-list">
+                                    <li>🏰 Luxury Houseboat Stay in Dal Lake</li>
+                                    <li>🚠 Gulmarg Gondola Ride Assistance</li>
+                                    <li>🚗 Private AC Cab for all Sightseeing</li>
+                                    <li>🍳 Daily Gourmet Breakfast & Dinner</li>
+                                    <li>🛶 1-Hour Shikara Ride Included</li>
+                                </ul>
+                                <div class="back-action-group">
+                                    <a href="https://wa.me/919990376067?text=Hi%2C%20I%20want%20to%20book%20the%20Kashmir%20Luxury%20Package."
+                                       class="btn btn-luxury-primary btn-sm" target="_blank" rel="noopener">
+                                        Book on WhatsApp
+                                    </a>
+                                    <a href="#contact" class="btn btn-outline btn-sm">Custom Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PACKAGE 2: KERALA -->
+                <div class="flip-card-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flip-card">
+                        <!-- FRONT SIDE -->
+                        <div class="flip-card-front" style="background-image: url('images/kerala.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-badge">Top Rated</div>
+                            <div class="front-content">
+                                <div class="rating-stars">★★★★★ <span>(4.9)</span></div>
+                                <h3 class="destination-name">Kerala Backwaters & Hills</h3>
+                                <p class="destination-route">Munnar • Thekkady • Alleppey • Cochin</p>
+                                <div class="price-duration-row">
+                                    <span class="duration">⏱ 4 Nights / 5 Days</span>
+                                    <span class="price">From ₹16,499/-</span>
+                                </div>
+                                <div class="flip-hint">⇄ Tap or Hover to View Inclusions</div>
+                            </div>
+                        </div>
+
+                        <!-- BACK SIDE -->
+                        <div class="flip-card-back">
+                            <div class="back-inner">
+                                <h4>Kerala Tour Inclusions</h4>
+                                <ul class="inclusion-list">
+                                    <li>🚢 Private Premium Houseboat Stay</li>
+                                    <li>🌿 Munnar Tea Plantation Guided Tour</li>
+                                    <li>🐘 Periyar Wildlife Sanctuary Visit</li>
+                                    <li>🍳 Traditional Kerala Breakfast & Dinner</li>
+                                    <li>🚗 Dedicated Private Chauffeur</li>
+                                </ul>
+                                <div class="back-action-group">
+                                    <a href="https://wa.me/919990376067?text=Hi%2C%20I%20want%20to%20book%20the%20Kerala%20Luxury%20Package."
+                                       class="btn btn-luxury-primary btn-sm" target="_blank" rel="noopener">
+                                        Book on WhatsApp
+                                    </a>
+                                    <a href="#contact" class="btn btn-outline btn-sm">Custom Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PACKAGE 3: MANALI -->
+                <div class="flip-card-wrapper" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flip-card">
+                        <!-- FRONT SIDE -->
+                        <div class="flip-card-front" style="background-image: url('images/manali.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-badge">Popular</div>
+                            <div class="front-content">
+                                <div class="rating-stars">★★★★★ <span>(4.8)</span></div>
+                                <h3 class="destination-name">Manali & Shimla Delight</h3>
+                                <p class="destination-route">Shimla • Kufri • Solang Valley • Rohtang</p>
+                                <div class="price-duration-row">
+                                    <span class="duration">⏱ 5 Nights / 6 Days</span>
+                                    <span class="price">From ₹14,999/-</span>
+                                </div>
+                                <div class="flip-hint">⇄ Tap or Hover to View Inclusions</div>
+                            </div>
+                        </div>
+
+                        <!-- BACK SIDE -->
+                        <div class="flip-card-back">
+                            <div class="back-inner">
+                                <h4>Himachal Inclusions</h4>
+                                <ul class="inclusion-list">
+                                    <li>🏔️ Valley View 4-Star Mountain Resort</li>
+                                    <li>⛷️ Solang Valley Adventure Day</li>
+                                    <li>🚗 Private Sedan / SUV for Mountain Transit</li>
+                                    <li>🍳 Daily Delicious Breakfast & Dinner</li>
+                                    <li>🔥 Evening Bonfire Experience</li>
+                                </ul>
+                                <div class="back-action-group">
+                                    <a href="https://wa.me/919990376067?text=Hi%2C%20I%20want%20to%20book%20the%20Manali%20Tour%20Package."
+                                       class="btn btn-luxury-primary btn-sm" target="_blank" rel="noopener">
+                                        Book on WhatsApp
+                                    </a>
+                                    <a href="#contact" class="btn btn-outline btn-sm">Custom Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PACKAGE 4: RAJASTHAN -->
+                <div class="flip-card-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flip-card">
+                        <!-- FRONT SIDE -->
+                        <div class="flip-card-front" style="background-image: url('images/rajasthan.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-badge">Royal Heritage</div>
+                            <div class="front-content">
+                                <div class="rating-stars">★★★★★ <span>(4.9)</span></div>
+                                <h3 class="destination-name">Royal Rajasthan Heritage</h3>
+                                <p class="destination-route">Jaipur • Jodhpur • Udaipur • Jaisalmer</p>
+                                <div class="price-duration-row">
+                                    <span class="duration">⏱ 6 Nights / 7 Days</span>
+                                    <span class="price">From ₹21,999/-</span>
+                                </div>
+                                <div class="flip-hint">⇄ Tap or Hover to View Inclusions</div>
+                            </div>
+                        </div>
+
+                        <!-- BACK SIDE -->
+                        <div class="flip-card-back">
+                            <div class="back-inner">
+                                <h4>Rajasthan Inclusions</h4>
+                                <ul class="inclusion-list">
+                                    <li>👑 Heritage Haveli & Palace Stays</li>
+                                    <li>🐪 Jaisalmer Desert Safari & Camp</li>
+                                    <li>🏰 City Palace, Amer Fort Guided Tours</li>
+                                    <li>🍳 Royal Rajasthani Cuisine Dining</li>
+                                    <li>🚗 Private Luxury AC Cab</li>
+                                </ul>
+                                <div class="back-action-group">
+                                    <a href="https://wa.me/919990376067?text=Hi%2C%20I%20want%20to%20book%20the%20Rajasthan%20Heritage%20Package."
+                                       class="btn btn-luxury-primary btn-sm" target="_blank" rel="noopener">
+                                        Book on WhatsApp
+                                    </a>
+                                    <a href="#contact" class="btn btn-outline btn-sm">Custom Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PACKAGE 5: GOA -->
+                <div class="flip-card-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flip-card">
+                        <!-- FRONT SIDE -->
+                        <div class="flip-card-front" style="background-image: url('images/goa.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-badge">Beach & Nightlife</div>
+                            <div class="front-content">
+                                <div class="rating-stars">★★★★★ <span>(4.8)</span></div>
+                                <h3 class="destination-name">Exotic Goa Beach Getaway</h3>
+                                <p class="destination-route">North Goa • South Goa • Grand Island</p>
+                                <div class="price-duration-row">
+                                    <span class="duration">⏱ 3 Nights / 4 Days</span>
+                                    <span class="price">From ₹12,999/-</span>
+                                </div>
+                                <div class="flip-hint">⇄ Tap or Hover to View Inclusions</div>
+                            </div>
+                        </div>
+
+                        <!-- BACK SIDE -->
+                        <div class="flip-card-back">
+                            <div class="back-inner">
+                                <h4>Goa Tour Inclusions</h4>
+                                <ul class="inclusion-list">
+                                    <li>🏖️ 4-Star Beachside Resort with Pool</li>
+                                    <li>⛵ Grand Island Scuba & Dolphin Cruise</li>
+                                    <li>🚗 Airport Pickup & Drop Included</li>
+                                    <li>🍳 Daily Buffet Breakfast</li>
+                                    <li>🍹 Complimentary Sunset Cruise Ticket</li>
+                                </ul>
+                                <div class="back-action-group">
+                                    <a href="https://wa.me/919990376067?text=Hi%2C%20I%20want%20to%20book%20the%20Goa%20Holiday%20Package."
+                                       class="btn btn-luxury-primary btn-sm" target="_blank" rel="noopener">
+                                        Book on WhatsApp
+                                    </a>
+                                    <a href="#contact" class="btn btn-outline btn-sm">Custom Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PACKAGE 6: AGRA / GOLDEN TRIANGLE -->
+                <div class="flip-card-wrapper" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flip-card">
+                        <!-- FRONT SIDE -->
+                        <div class="flip-card-front" style="background-image: url('images/agra.jpg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-badge">Iconic Wonder</div>
+                            <div class="front-content">
+                                <div class="rating-stars">★★★★★ <span>(4.9)</span></div>
+                                <h3 class="destination-name">Taj Mahal & Golden Triangle</h3>
+                                <p class="destination-route">Delhi • Agra • Fatehpur Sikri • Jaipur</p>
+                                <div class="price-duration-row">
+                                    <span class="duration">⏱ 3 Nights / 4 Days</span>
+                                    <span class="price">From ₹13,499/-</span>
+                                </div>
+                                <div class="flip-hint">⇄ Tap or Hover to View Inclusions</div>
+                            </div>
+                        </div>
+
+                        <!-- BACK SIDE -->
+                        <div class="flip-card-back">
+                            <div class="back-inner">
+                                <h4>Golden Triangle Inclusions</h4>
+                                <ul class="inclusion-list">
+                                    <li>🕌 Sunrise VIP Guided Taj Mahal Tour</li>
+                                    <li>🏰 Agra Fort & Amber Fort Excursion</li>
+                                    <li>🚗 Express Expressway Private Cab</li>
+                                    <li>🍳 5-Star Hotel Stay with Breakfast</li>
+                                    <li>📸 Professional Photographer Guide</li>
+                                </ul>
+                                <div class="back-action-group">
+                                    <a href="https://wa.me/919990376067?text=Hi%2C%20I%20want%20to%20book%20the%20Taj%20Mahal%20Golden%20Triangle%20Tour."
+                                       class="btn btn-luxury-primary btn-sm" target="_blank" rel="noopener">
+                                        Book on WhatsApp
+                                    </a>
+                                    <a href="#contact" class="btn btn-outline btn-sm">Custom Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================================
+         EXPERIENCE LIVE COUNTERS SECTION
+    ===================================================== -->
+    <section class="section stats-counter-section">
+        <div class="container">
+            <div class="stats-grid">
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-number-box">
+                        <span class="stat-counter" data-target="12500">0</span>
+                        <span class="stat-plus">+</span>
+                    </div>
+                    <p class="stat-title">Delighted Travelers</p>
+                    <small class="stat-sub">Across India & International</small>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-number-box">
+                        <span class="stat-counter" data-target="450">0</span>
+                        <span class="stat-plus">+</span>
+                    </div>
+                    <p class="stat-title">Curated Holiday Packages</p>
+                    <small class="stat-sub">Family, Honeymoon & Groups</small>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-number-box">
+                        <span class="stat-counter" data-target="99">0</span>
+                        <span class="stat-plus">%</span>
+                    </div>
+                    <p class="stat-title">Customer Satisfaction</p>
+                    <small class="stat-sub">Verified 5-Star Reviews</small>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-number-box">
+                        <span class="stat-counter" data-target="24">0</span>
+                        <span class="stat-plus">/7</span>
+                    </div>
+                    <p class="stat-title">Dedicated Concierge</p>
+                    <small class="stat-sub">Instant On-Trip Assistance</small>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         SERVICES SHOWCASE
+    ===================================================== -->
+    <section id="services" class="section services-section">
+        <div class="container">
+
+            <div class="section-header-center" data-aos="fade-up">
+                <div class="section-tag">
+                    <span>COMPLETE TRAVEL SOLUTIONS</span>
+                </div>
+                <h2 class="section-title">Our Premium Travel Services</h2>
+                <p class="section-subtitle">
+                    End-to-end luxury hospitality and travel arrangements curated for ultimate comfort.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- Service 1 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon-wrapper">
+                        <span>🗺️</span>
+                    </div>
+                    <div class="service-details">
+                        <h3>Customized Tour Packages</h3>
+                        <p>Complete domestic & international luxury packages designed around your dates, budget, and travel interests.</p>
+                        <button type="button" class="btn-text-link service-btn" data-service="Customized Tour Packages">
+                            Inquire for Tours →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon-wrapper">
+                        <span>🏨</span>
+                    </div>
+                    <div class="service-details">
+                        <h3>Luxury Hotel Bookings</h3>
+                        <p>Exclusive deals on 4-star, 5-star, heritage palaces, villas, and boutique luxury resorts with meal plans.</p>
+                        <button type="button" class="btn-text-link service-btn" data-service="Luxury Hotel Bookings">
+                            Inquire for Hotels →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon-wrapper">
+                        <span>🚖</span>
+                    </div>
+                    <div class="service-details">
+                        <h3>Private Cab & Chauffeur</h3>
+                        <p>Clean, air-conditioned Sedans, luxury SUVs, and tempo travelers with polite, verified local drivers.</p>
+                        <button type="button" class="btn-text-link service-btn" data-service="Private Cab & Chauffeur">
+                            Inquire for Cabs →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon-wrapper">
+                        <span>💍</span>
+                    </div>
+                    <div class="service-details">
+                        <h3>Honeymoon Special Suites</h3>
+                        <p>Romantic candle-lit dinners, flower-decorated rooms, honeymoon cake, and scenic couples' photo sessions.</p>
+                        <button type="button" class="btn-text-link service-btn" data-service="Honeymoon Special Suites">
+                            Inquire for Honeymoon →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon-wrapper">
+                        <span>👨‍👩‍👧‍👦</span>
+                    </div>
+                    <div class="service-details">
+                        <h3>Family & Group Holidays</h3>
+                        <p>Kid-friendly, elder-comfortable itineraries with large suites, customized meal options, and private coaches.</p>
+                        <button type="button" class="btn-text-link service-btn" data-service="Family & Group Holidays">
+                            Inquire for Families →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon-wrapper">
+                        <span>🏢</span>
+                    </div>
+                    <div class="service-details">
+                        <h3>Corporate Retreats & MICE</h3>
+                        <p>Seamless corporate offsites, conferences, team excursions, and group transfers with corporate billing.</p>
+                        <button type="button" class="btn-text-link service-btn" data-service="Corporate Retreats & MICE">
+                            Inquire for Corporate →
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================================
+         WHY US (ATMOSPHERIC LUXURY SECTION)
+    ===================================================== -->
+    <section id="why-us" class="section why-us-luxury-section">
+        <div class="why-us-bg-overlay"></div>
+        <div class="container">
+            <div class="why-us-layout">
+
+                <div class="why-us-text" data-aos="fade-right">
+                    <div class="section-tag light-tag">
+                        <span>THE SAFARINDIA ADVANTAGE</span>
+                    </div>
+                    <h2 class="section-title text-white">
+                        Why Discerning Travelers Choose Safarindia
+                    </h2>
+                    <p class="section-desc text-silver">
+                        We don’t just sell packages; we take full ownership of your holiday experience from the moment you take off until you return safely home.
+                    </p>
+
+                    <div class="why-luxury-grid">
+                        <div class="why-box">
+                            <span class="box-icon">👑</span>
+                            <div>
+                                <h4>100% Customized For You</h4>
+                                <p>No rigid cookie-cutter plans. You choose your stay, vehicle, and pace.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-box">
+                            <span class="box-icon">💰</span>
+                            <div>
+                                <h4>No Hidden Markups</h4>
+                                <p>Clear inclusions and tax details provided upfront with zero hidden charges.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-box">
+                            <span class="box-icon">🤝</span>
+                            <div>
+                                <h4>24/7 Live On-Trip Escort</h4>
+                                <p>Instant WhatsApp & direct phone assistance if anything needs adjustment on-site.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-box">
+                            <span class="box-icon">🔒</span>
+                            <div>
+                                <h4>Secure & Certified Payments</h4>
+                                <p>Bank transfers, GST invoices, and safe payment gateway integration.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="why-us-visual" data-aos="fade-left">
+                    <div class="visual-card-stack">
+                        <img src="images/travel.jpg" alt="Luxury Travel Experience" class="stack-img" loading="lazy">
+                        <div class="glass-float-card">
+                            <span class="float-emoji">🌟</span>
+                            <div>
+                                <strong>100% Guest Happiness</strong>
+                                <small>Recognized for excellence in private tours</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         VISUAL DESTINATION GALLERY
+    ===================================================== -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+
+            <div class="section-header-center" data-aos="fade-up">
+                <div class="section-tag">
+                    <span>VISUAL INSPIRATION</span>
+                </div>
+                <h2 class="section-title">Glimpse of Extraordinary Journeys</h2>
+                <p class="section-subtitle">
+                    Real captures from our guests exploring scenic wonders across India.
+                </p>
+            </div>
+
+            <div class="luxury-gallery-grid">
+                <div class="gallery-tile" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/gallery-1.jpg" alt="Scenic Destination 1" loading="lazy">
+                    <div class="tile-caption"><span>Serene Mountain Valleys</span></div>
+                </div>
+                <div class="gallery-tile" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="images/gallery-2.jpg" alt="Scenic Destination 2" loading="lazy">
+                    <div class="tile-caption"><span>Royal Heritage Architecture</span></div>
+                </div>
+                <div class="gallery-tile" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/gallery-3.jpg" alt="Scenic Destination 3" loading="lazy">
+                    <div class="tile-caption"><span>Golden Coastline Sunsets</span></div>
+                </div>
+                <div class="gallery-tile" data-aos="zoom-in" data-aos-delay="250">
+                    <img src="images/gallery-4.jpg" alt="Scenic Destination 4" loading="lazy">
+                    <div class="tile-caption"><span>Tranquil Backwater Cruises</span></div>
+                </div>
+                <div class="gallery-tile" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="images/gallery-5.jpg" alt="Scenic Destination 5" loading="lazy">
+                    <div class="tile-caption"><span>Snow-capped Mountain Summits</span></div>
+                </div>
+                <div class="gallery-tile" data-aos="zoom-in" data-aos-delay="350">
+                    <img src="images/gallery-6.jpg" alt="Scenic Destination 6" loading="lazy">
+                    <div class="tile-caption"><span>Exotic Luxury Retreats</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================================
+         CALL TO ACTION WITH LOW TRANSPARENCY OVERLAY
+    ===================================================== -->
+    <section class="cta-luxury-section">
+        <div class="cta-backdrop"></div>
+        <div class="container cta-container" data-aos="zoom-in">
+            <div class="cta-inner">
+                <span class="cta-pill">READY FOR AN UNFORGETTABLE ESCAPE?</span>
+                <h2 class="cta-headline">Let Our Travel Concierge Craft Your Perfect Holiday</h2>
+                <p class="cta-sub">
+                    Speak with our destination experts today. Get custom quotes, secret local recommendations, and special seasonal discounts.
+                </p>
+                <div class="cta-btn-row">
+                    <a href="https://wa.me/919990376067?text=Hello%20SafarIndia%2C%20I%20want%20to%20plan%20my%20next%20vacation."
+                       class="btn btn-luxury-primary btn-lg" target="_blank" rel="noopener">
+                        <span>Chat on WhatsApp</span>
+                        <span class="btn-arrow">💬</span>
+                    </a>
+                    <a href="#contact" class="btn btn-luxury-glass btn-lg">
+                        <span>Fill Quick Form</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         BOOKING & INQUIRY FORM (SUPABASE CONNECTED)
+    ===================================================== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-grid-luxury">
+
+                <!-- CONTACT INFO PANEL -->
+                <div class="contact-info-panel" data-aos="fade-right">
+                    <div class="section-tag">
+                        <span>GET IN TOUCH</span>
+                    </div>
+                    <h2 class="section-title">We Are Here To Assist You</h2>
+                    <p class="section-desc">
+                        Have questions about a destination or want a tailored holiday package? Contact us directly or submit your inquiry for an instant callback.
+                    </p>
+
+                    <div class="contact-card-list">
+                        <div class="contact-badge-item">
+                            <div class="badge-icon">📍</div>
+                            <div class="badge-content">
+                                <small>Office Location</small>
+                                <strong>Safarindia Private Limited, India</strong>
+                            </div>
+                        </div>
+
+                        <a href="tel:+919990376067" class="contact-badge-item">
+                            <div class="badge-icon">📞</div>
+                            <div class="badge-content">
+                                <small>Phone & WhatsApp</small>
+                                <strong>+91 9990376067</strong>
+                            </div>
+                        </a>
+
+                        <a href="mailto:sachinmishra2940@gmail.com" class="contact-badge-item">
+                            <div class="badge-icon">✉️</div>
+                            <div class="badge-content">
+                                <small>Email Address</small>
+                                <strong>sachinmishra2940@gmail.com</strong>
+                            </div>
+                        </a>
+
+                        <div class="contact-badge-item">
+                            <div class="badge-icon">⏰</div>
+                            <div class="badge-content">
+                                <small>Working Hours</small>
+                                <strong>24 Hours / 7 Days Live Concierge</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="safe-travel-seal">
+                        <span>🔒</span>
+                        <p><strong>100% Confidential & Secure Inquiry</strong><br><small>Your details are never shared with third parties.</small></p>
+                    </div>
+                </div>
+
+                <!-- FORM CARD (PRESERVES SUPABASE INTEGRATION) -->
+                <div class="contact-form-panel" data-aos="fade-left">
+                    <div class="form-luxury-card">
+                        <div class="form-card-header">
+                            <h3>Plan Your Dream Vacation</h3>
+                            <p>Fill in the details below and get a customized quote within 15 minutes.</p>
+                        </div>
+
+                        <form id="contactForm" class="luxury-form">
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Full Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone / WhatsApp Number *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" required autocomplete="tel">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address (Optional)</label>
+                                    <input type="email" id="email" name="email" placeholder="e.g. rahul@gmail.com" autocomplete="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">Select Service</label>
+                                    <select id="service" name="service">
+                                        <option value="Customized Tour Packages">Customized Tour Packages</option>
+                                        <option value="Luxury Hotel Bookings">Luxury Hotel Bookings</option>
+                                        <option value="Private Cab & Chauffeur">Private Cab & Chauffeur</option>
+                                        <option value="Honeymoon Special Suites">Honeymoon Special Suites</option>
+                                        <option value="Family & Group Holidays">Family & Group Holidays</option>
+                                        <option value="Corporate Retreats & MICE">Corporate Retreats & MICE</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="destination">Destination Name</label>
+                                    <input type="text" id="destination" name="destination" placeholder="e.g. Kashmir, Kerala, Goa, Manali...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="travel-date">Expected Travel Date</label>
+                                    <input type="date" id="travel-date" name="travel_date">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="travellers">Number of Travellers</label>
+                                    <input type="number" id="travellers" name="travellers" min="1" max="100" placeholder="e.g. 2">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Special Requirements / Preferences</label>
+                                <textarea id="message" name="message" rows="3" placeholder="Tell us about your hotel category preference, flight requirements, or special celebration..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-luxury-primary btn-block">
+                                <span>Send Travel Enquiry</span>
+                                <span class="btn-arrow">→</span>
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         LUXURY FOOTER
+    ===================================================== -->
+    <footer class="footer-luxury">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- BRAND INFO -->
+                <div class="footer-col brand-col">
+                    <a href="#home" class="footer-brand">
+                        <span class="brand-name">SAFARINDIA</span>
+                        <span class="brand-sub">PRIVATE LIMITED</span>
+                    </a>
+                    <p class="footer-about-text">
+                        Your trusted luxury travel partner for holiday packages, luxury hotels, chauffeured cabs, and customized itineraries with unmatched service quality.
+                    </p>
+                    <div class="footer-contact-pills">
+                        <span>📞 +91 9990376067</span>
+                        <span>✉️ sachinmishra2940@gmail.com</span>
+                    </div>
+                </div>
+
+                <!-- QUICK DESTINATIONS -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Top Destinations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#packages">Kashmir Paradise Tour</a></li>
+                        <li><a href="#packages">Kerala Backwaters</a></li>
+                        <li><a href="#packages">Manali & Shimla Escapes</a></li>
+                        <li><a href="#packages">Royal Rajasthan Palaces</a></li>
+                        <li><a href="#packages">Goa Beach Vacations</a></li>
+                        <li><a href="#packages">Golden Triangle & Taj Mahal</a></li>
+                    </ul>
+                </div>
+
+                <!-- QUICK NAVIGATION -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About SafarIndia</a></li>
+                        <li><a href="#services">Our Travel Services</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#gallery">Photo Gallery</a></li>
+                        <li><a href="#contact">Contact & Inquiry</a></li>
+                    </ul>
+                </div>
+
+                <!-- LUXURY GUARANTEE -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Travel Assurance</h4>
+                    <div class="footer-assurance-card">
+                        <p>👑 <strong>VIP Hospitality</strong><br><small>Curated 4★ & 5★ Accommodations</small></p>
+                        <p>🛡️ <strong>100% Safe Bookings</strong><br><small>Govt. Recognized Operations</small></p>
+                        <p>💬 <strong>Instant Booking Helpline</strong><br><small>Direct line to Senior Concierge</small></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Safarindia Private Limited. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#home">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#home">Terms of Service</a>
+                    <span>•</span>
+                    <a href="#contact">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Main Logic Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>

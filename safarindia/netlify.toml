@@ -1,0 +1,21 @@
+# =====================================================
+# SAFARINDIA NETLIFY ROUTES
+# =====================================================
+
+# Admin Login
+[[redirects]]
+from = "/admin/login/"
+to = "/login.html"
+status = 200
+
+# Keep /admin/ working as an alias for Admin Login
+[[redirects]]
+from = "/admin/"
+to = "/login.html"
+status = 200
+
+# Admin Dashboard
+[[redirects]]
+from = "/admin/dashboard/"
+to = "/admin-dashboard.html"
+status = 200
